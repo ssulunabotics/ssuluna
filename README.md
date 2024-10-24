@@ -7,7 +7,7 @@ dig, drive, dump, perception
 :: LOW LEVEL ::  
   each functional group has hardware files (/ino), python hardware interface, and ros messaging communication 
 :: CONTROL LAYER ::  
-  control_auto and control_manual have programs for controlling the rover
+  control_auto and control_manual have programs for controlling the rover  
 :: SYSTEM LAYER ::  
   dig,dump,drive,perception and control group ros messages are handled by ros nodes and published via topic  
 :: HIGH LEVEL ::  
