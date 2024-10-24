@@ -1,6 +1,7 @@
 #!/bin/bash
 # SETUP DIR STRUCTURE.py
-# Initializes Project Structure
+# Initializes Basic Project Structure
+# ! Final Structure doesn't resemble this
 # Jordan
 
 # Base directory
