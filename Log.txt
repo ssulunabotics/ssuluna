@@ -1,0 +1,4 @@
+# Dev Log
+Oct24
+* Setup Directory Structure - Jordan
+
