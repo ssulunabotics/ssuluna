@@ -47,16 +47,18 @@ The program flow is as follows.
 │   │   └── joystick_controller.py     # ROS2 node for manual control using a joystick or controller
 │   │
 │   ├── /digging                       # Digging subsystem logic and sensors
-│   │   ├── dig_controller.py          # ROS2 node for controlling the digging mechanism
+│   │   ├── DiggingStatus.msg          # ROS2 message
+│   │   ├── StartDigging.srv           # ROS2 service for starting the digging mechanism
+│   │   ├── dig_controller.py          # Code for controlling the digging mechanism
 │   │   └── /ino                       # Arduino code for controlling the digging system hardware
 │
 │   ├── /driving                       # Driving subsystem logic and sensors
-│   │   ├── motor_control.py           # ROS2 node for controlling the motors (wheel movement)
-│   │   ├── wheel_encoders.py          # ROS2 node for reading wheel encoder data
+│   │   ├── motor_control.py           # Code for controlling the motors (wheel movement)
+│   │   ├── wheel_encoders.py          # Code for reading wheel encoder data
 │   │   └── /ino                       # Arduino code for controlling the motors and reading encoders
 │
 │   ├── /dumping                       # Dumping subsystem logic and sensors
-│   │   ├── dump_controller.py         # ROS2 node for controlling the dumping mechanism
+│   │   ├── dump_controller.py         # Code for controlling the dumping mechanism
 │   │   └── /ino                       # Arduino code for controlling the dumping system hardware
 │
 │   ├── /perception                    # Perception systems (camera, LiDAR, and other sensor logic)
@@ -95,6 +97,7 @@ The program flow is as follows.
 │   ├── LidarData.msg                  # ROS message for LiDAR sensor data
 │   ├── LoadSensor.msg                 # ROS message for load sensor data
 │   └── StateUpdate.msg                # ROS message for state machine updates
+|   ##
 │
 ├── README.md                          # Project overview and setup instructions
 ├── launch.sh                          # BIG BUTTON, Top-level launch script for starting the rover's systems
