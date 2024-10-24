@@ -9,7 +9,7 @@ control, dig, drive, dump, perception, recovery behaviors (drove into wall, fell
 The program flow is as follows.
 
 :: LOW LEVEL (cells) ::  
-   - each functional group has hardware files (/ino), python hardware interface, and ros messaging communication 
+   - each functional group has hardware files (/ino), python hardware interface, and ros messaging phrase encoding
 :: CONTROL LAYER (muscles) ::  
    - control_auto and control_manual have programs for controlling the rover via some data input
 :: SYSTEM LAYER (nervous system) ::  
