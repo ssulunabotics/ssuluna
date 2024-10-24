@@ -5,13 +5,13 @@ Jordan Nakamoto
 * /src Scoped by Core Rover Functions:  
 dig, drive, dump, perception  
 :: LOW LEVEL ::  
-  each functional group has hardware files (/ino), python interface, and ros messages  
-:: LOW-MID LEVEL ::  
-  control_auto and control_manual have programs for controlling the rover  
-:: MID LEVEL ::  
-  each functional group and control group ros messages are handled by ros nodes and published via topic to the state machine  
+  each functional group has hardware files (/ino), python hardware interface, and ros messaging communication 
+:: CONTROL LAYER ::  
+  control_auto and control_manual have programs for controlling the rover
+:: SYSTEM LAYER ::  
+  dig,dump,drive,perception and control group ros messages are handled by ros nodes and published via topic  
 :: HIGH LEVEL ::  
-  the state machine changes the robot's behavior based on incoming data from nodes, accepting conditions to transition states  
+  the state machine subscribes to topics and changes the robot's behavior based on incoming data from nodes, accepting conditions to transition states  
 
 ```
 /ssuluna                              # Project root directory
