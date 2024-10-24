@@ -1,0 +1,1 @@
+My idea is to write the documentation in txt and compile it with ChatGPT when its ready to be formed.
