@@ -89,6 +89,7 @@ The program flow is as follows.
 │   ├── /actions                       # Actions the state machine can trigger (e.g., navigate, dig, transport)
 │   └── /goals                         # High-level mission goals (e.g., explore, excavation, transport)
 │
+|   ## POTENTIAL ADJUSTMENT If we want to centralize messaging design
 ├── /messages                          # Centralized location for all ROS message definitions
 │   ├── CameraData.msg                 # ROS message for camera data
 │   ├── LidarData.msg                  # ROS message for LiDAR sensor data
