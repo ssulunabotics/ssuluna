@@ -1,5 +1,5 @@
 	1.	Topic Subscription:
-	•	Each state subscribes to relevant ROS topics (e.g., april_tag_detection, obstacle_detection, digging_complete).
+	•	Each state subscribes to relevant ROS node topics (e.g., april_tag_detection, obstacle_detection, digging_complete).
 	2.	State Monitoring:
 	•	Each state processes incoming messages and decides whether to transition.
 	•	Example: In Exploration, if an AprilTag is detected, it transitions to Approach Tag.
