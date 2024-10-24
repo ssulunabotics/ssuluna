@@ -1,8 +1,8 @@
 # ssuluna
 Jordan Nakamoto
 
-Outer directory Designed for developer navigation I hope...  
-SRC Scoped by Core Rover Functions  
+* Outer directory Designed for developer navigation I hope...  
+* /src Scoped by Core Rover Functions  
 ~  dig, drive, dump, perception  
 LOW LEVEL  
 ~  each functional group has hardware files (/ino), python interface, and ros messages  
