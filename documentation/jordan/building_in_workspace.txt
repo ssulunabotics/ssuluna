@@ -1,0 +1,13 @@
+clone packages into /libraries
+
+colcon build --symlink-install
+
+
+install dependencies
+rosdep install -i --from-path src --rosdistro humble -y
+
+
+~~~
+installing rosdep and colcon worked on ubuntu
+1. sudo apt instlal python3-rosdep2
+2. sudo apt install python3-colcon-common-extensions

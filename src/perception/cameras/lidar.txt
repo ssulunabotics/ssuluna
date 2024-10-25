@@ -1,0 +1,4 @@
+sllidar_ros2 running requires the read and write permissions of the serial device. You can manually modify it with the following command:
+
+sudo chmod 777 /dev/ttyUSB0
+
