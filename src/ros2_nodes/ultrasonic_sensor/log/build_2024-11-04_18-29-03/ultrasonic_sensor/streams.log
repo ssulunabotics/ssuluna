@@ -1,0 +1,21 @@
+[3.340s] Invoking command in '/home/pi4ubuntumate/ssuluna/src/ros2_nodes/ultrasonic_sensor': PYTHONPATH=/home/pi4ubuntumate/ssuluna/src/ros2_nodes/ultrasonic_sensor/build/ultrasonic_sensor/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/pi4ubuntumate/ssuluna/src/ros2_nodes/ultrasonic_sensor/install/ultrasonic_sensor/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base build/ultrasonic_sensor build --build-base /home/pi4ubuntumate/ssuluna/src/ros2_nodes/ultrasonic_sensor/build/ultrasonic_sensor/build install --record /home/pi4ubuntumate/ssuluna/src/ros2_nodes/ultrasonic_sensor/build/ultrasonic_sensor/install.log --single-version-externally-managed install_data
+[4.615s] running egg_info
+[4.618s] writing build/ultrasonic_sensor/ultrasonic_sensor.egg-info/PKG-INFO
+[4.619s] writing dependency_links to build/ultrasonic_sensor/ultrasonic_sensor.egg-info/dependency_links.txt
+[4.620s] writing entry points to build/ultrasonic_sensor/ultrasonic_sensor.egg-info/entry_points.txt
+[4.621s] writing requirements to build/ultrasonic_sensor/ultrasonic_sensor.egg-info/requires.txt
+[4.622s] writing top-level names to build/ultrasonic_sensor/ultrasonic_sensor.egg-info/top_level.txt
+[4.631s] reading manifest file 'build/ultrasonic_sensor/ultrasonic_sensor.egg-info/SOURCES.txt'
+[4.635s] writing manifest file 'build/ultrasonic_sensor/ultrasonic_sensor.egg-info/SOURCES.txt'
+[4.636s] running build
+[4.636s] running build_py
+[4.638s] running install
+[4.640s] running install_lib
+[4.646s] running install_data
+[4.646s] running install_egg_info
+[4.654s] removing '/home/pi4ubuntumate/ssuluna/src/ros2_nodes/ultrasonic_sensor/install/ultrasonic_sensor/lib/python3.10/site-packages/ultrasonic_sensor-0.0.0-py3.10.egg-info' (and everything under it)
+[4.656s] Copying build/ultrasonic_sensor/ultrasonic_sensor.egg-info to /home/pi4ubuntumate/ssuluna/src/ros2_nodes/ultrasonic_sensor/install/ultrasonic_sensor/lib/python3.10/site-packages/ultrasonic_sensor-0.0.0-py3.10.egg-info
+[4.664s] running install_scripts
+[4.755s] Installing arduino_publisher script to /home/pi4ubuntumate/ssuluna/src/ros2_nodes/ultrasonic_sensor/install/ultrasonic_sensor/lib/ultrasonic_sensor
+[4.756s] writing list of installed files to '/home/pi4ubuntumate/ssuluna/src/ros2_nodes/ultrasonic_sensor/build/ultrasonic_sensor/install.log'
+[4.884s] Invoked command in '/home/pi4ubuntumate/ssuluna/src/ros2_nodes/ultrasonic_sensor' returned '0': PYTHONPATH=/home/pi4ubuntumate/ssuluna/src/ros2_nodes/ultrasonic_sensor/build/ultrasonic_sensor/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/pi4ubuntumate/ssuluna/src/ros2_nodes/ultrasonic_sensor/install/ultrasonic_sensor/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base build/ultrasonic_sensor build --build-base /home/pi4ubuntumate/ssuluna/src/ros2_nodes/ultrasonic_sensor/build/ultrasonic_sensor/build install --record /home/pi4ubuntumate/ssuluna/src/ros2_nodes/ultrasonic_sensor/build/ultrasonic_sensor/install.log --single-version-externally-managed install_data

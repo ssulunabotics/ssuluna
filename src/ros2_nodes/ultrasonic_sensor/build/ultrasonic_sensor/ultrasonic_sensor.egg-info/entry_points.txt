@@ -1,0 +1,3 @@
+[console_scripts]
+arduino_publisher = ultrasonic_sensor.arduino_publisher:main
+
