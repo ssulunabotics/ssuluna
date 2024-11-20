@@ -35,7 +35,7 @@ class SerialMotorController(Node):
         angular = twist_msg.angular.z
         
         # Define a threshold for each motion to decide direction
-        speed = int(abs(linear) * 255) if linear != 0 else int(abs(angular) * 255)
+        speed = int(abs(linear) * 255) if linear != 0 else int(abs(angular) * 255 * 1.76)
 
         # Determine command based on linear and angular velocities
         if linear > 0:

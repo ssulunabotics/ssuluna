@@ -10,11 +10,39 @@ sudo chmod 666 /dev/ttyACM0
 ```
 to let the Pi access the USB port
 
+You may need to source
+
+```bash
+source /install/setup.bash
+```
+
 To run the package:
 
 ```
 ros2 run drive_motor_controller drive_motor_controller
 ```
+
+Now the node is running on the pi or the rover
+
+Set this as a linux env variable or append this to the .bashrc file on both computers
+
+```bash
+ROS_DOMAIN = 0 
+```
+
+Then fire up teleop_twist_joy on another computer on the network and the...
+drive_motor_controller will interpret the messages over cmd_vel
+
+```bash
+ros2 launch teleop_twist_joy teleop-launch.py joy_config:='xbox'
+```
+
+```
+ros2 topic echo joy
+```
+
+cmd_vel breaks down into forward and angular velocities
+
 
 When updating ros module code:
 
