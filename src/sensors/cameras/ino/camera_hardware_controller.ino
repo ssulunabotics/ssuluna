@@ -18,11 +18,11 @@ int angle3 = 90;
 void setup() {
   // Attach servos to pins
   servo1.attach(22);
-  servo2.attach(24);
+  servo2.attach(24); 
   servo3.attach(26);
   servo4.attach(28);
   servo5.attach(30);
-  servo6.attach(32);#include <Servo.h>
+  servo6.attach(32);
 // Control 3 servo motors for the camera arm prototype
 
 // ---- SETUP -------------- //

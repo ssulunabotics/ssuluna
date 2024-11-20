@@ -1,4 +1,4 @@
-// DRIVE MOTORS
+// ROBOCAR DRIVE MOTORS
 // -------------------------
 
 // ---- SETUP -------------- // 
@@ -69,7 +69,12 @@ void executeCommand() {
     case 'b': moveBackward(speed); break;    // Backward
     case 'l': turnLeft(speed); break;        // Left
     case 'r': turnRight(speed); break;       // Right
-    case 's': stopMotors(); break;      // Stop
+    case 's': stopMotors(); break;           // Stop
+    // ! TODO: Pass in the servo with the degree e.g. (s1, speed) {degree is sent in the same decoded bytes as speed}
+    case 'x': moveServo(); break;            // Camera Tilt - top servo
+    case 'y': moveServo(); break;            // Camera Arm  - middle servo
+    case 'z': moveServo(); break;            // Camera Pan  - bottom servo ... this one is the main one responding to inputs to look around the world
+    // 
     default: Serial.println("Invalid command.");
   }
 }
@@ -144,23 +149,7 @@ void turnRight(int speed) {
 }
 
 void stopMotors() {
-  int brakeSpeed = 70;
-  int brakeDuration = 100;
-  // Set motor directions to reverse for braking
-  digitalWrite(in1, LOW); digitalWrite(in2, HIGH);
-  digitalWrite(in1_2, HIGH); digitalWrite(in2_2, LOW);
-
-  digitalWrite(in3, HIGH); digitalWrite(in4, LOW);
-  digitalWrite(in3_2, LOW); digitalWrite(in4_2, HIGH);
-
-  // Apply the reverse braking speed
-  MotorSpeed1 = MotorSpeed2 = MotorSpeed3 = MotorSpeed4 = brakeSpeed;
-  applyMotorSpeeds();
-  
-  // Hold the braking for a short duration
-  delay(brakeDuration);
-
-  // Now fully stop the motors
+  // Fully stop the motors
   digitalWrite(in1, LOW); digitalWrite(in2, LOW);
   digitalWrite(in1_2, LOW); digitalWrite(in2_2, LOW);
 
@@ -169,6 +158,11 @@ void stopMotors() {
 
   // Set motor speeds to zero
   setMotorSpeeds(0);
+}
+
+void moveServo(servo s, int degree) {
+    // write to servo
+    // interpolate over time
 }
 
 
