@@ -1,10 +1,13 @@
 // Display weight on Arduino built in LED on r4
+// Load sensor for sand bucket
 
 #include "HX711.h"
+
+// Necessary for display on built in LED
 #include "ArduinoGraphics.h"
 #include "Arduino_LED_Matrix.h"
 
-// Pin definitions for HX711
+// Pin definitions for HX711 load sensor chip
 #define DT 2   // Data pin connected to HX711 DT
 #define SCK 3  // Clock pin connected to HX711 SCK
 
@@ -47,7 +50,9 @@ void loop() {
     char weight_str[8];
     dtostrf(weight_pounds, 4, 1, weight_str);
 
-    // Display weight on the LED matrix
+    // ------------------------- //
+    // DISPLAY on Arduino LED
+    // ------------------------- //
     matrix.beginDraw();
     matrix.stroke(0xFFFFFFFF);
     matrix.textScrollSpeed(100);
